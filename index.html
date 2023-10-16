@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+
+  <body>
+    <img
+      src="https://thehill.com/wp-content/uploads/sites/2/2022/03/ca_collegeenrollment_istock.jpg?strip=1"
+      class="img-container"
+    />
+    <div class="main-container" id="main_container">
+      <form class="form-container" onsubmit="addStudentData()">
+        <h2>Student Information Form</h2>
+        <label for="name_input">Student Name</label>
+        <input
+          required
+          type="text"
+          id="name_input"
+          placeholder="Enter student name..."
+        />
+        <label for="grade_input">Student Grade</label>
+        <input
+          required
+          type="number"
+          id="grade_input"
+          placeholder="Enter student grade..."
+        />
+        <label for="class_input">Student Class</label>
+        <input
+          required
+          type="text"
+          id="class_input"
+          placeholder="Enter student class..."
+        />
+        <input type="submit" value="ADD" />
+      </form>
+
+      <div class="list-container" id="list_container">
+        <h2>Student Information</h2>
+        <ul id="ul_list">
+          <li style="font-weight: bold">Name</li>
+          <li style="font-weight: bold">Grade</li>
+          <li style="font-weight: bold">Class</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
